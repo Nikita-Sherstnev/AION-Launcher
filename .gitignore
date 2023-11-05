@@ -1,0 +1,6 @@
+.DS_Store
+/torrents_old/
+__pycache__
+build
+dist
+downloads

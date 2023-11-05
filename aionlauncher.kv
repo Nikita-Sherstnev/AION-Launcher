@@ -1,0 +1,30 @@
+#:kivy 2.0.0
+#:import hex kivy.utils.get_color_from_hex
+
+<FloatLayout>:
+    canvas.before:
+        Color:
+            rgba: hex('#FFFFE0')
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'asian-fantasy-princess-with-wings.jpg'
+
+    ProgressBar:
+        id: my_progress_bar
+        value: 0
+        min: 0
+        max: 100
+        pos_hint: {'x':.1, 'y':-.45}
+        size_hint_x: .8
+
+
+<Button>:
+    text_size: self.width - dp(10), self.height - dp(10)
+    halign: 'center'
+    valign: 'center'
+
+<Label>:
+    text_size: self.width - dp(10), self.height - dp(10)
+    halign: 'center'
+    valign: 'center'
